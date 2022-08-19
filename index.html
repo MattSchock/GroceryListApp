@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body class="container">
+
+    <div id="new customer" class="jumbotron-fluid">
+        <div class="container">
+            <h2>New Customer</h2>
+            <div class="row">
+                <div class="col-sm-12">
+                    <label for="customer_name">Grocery Item</label>
+                    <input type="text" id="customer_name" class="form-control" placeholder="Grocery Item">
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="customer_phone">Customer Phone Number</label>
+                    <input type="tel" id="customer_phone" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class="col-sm-6">
+                    <label for="customer_birthdate">Date of Birth</label>
+                    <input type="date" id="customer_birthdate" class="form-control">
+                </div>
+            </div>
+        </div>
+        <br>
+        <button id="create_customer" class="btn btn-primary form-control" onClick="createCustomer(); renderTable()">Create Customer</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <table id="customer_table" class="table table-dark table-striped">
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>DOB</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+        <tbody id="tableappend">
+
+        </tbody>
+    </table>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <button class="btn btn-primary" onClick="updateCustomerList();">testing button</button> -->
+    <!-- <script src="node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
