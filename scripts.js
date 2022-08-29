@@ -61,11 +61,6 @@ function renderTable() {
             <td>
             <button class="btn btn-danger" text="Delete" onClick="deleteCustomer(${customerList[i].id})">Delete</button>
             </td>
-            <td>
-            <button type="button" class="btn btn-primary" data-bs-target="#edit-modal" onClick="updateCustomer(${customerList[i].id})" >
-            Edit
-            </button>
-            </td>
         </tr>')`
     )
     }
